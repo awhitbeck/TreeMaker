@@ -39,6 +39,16 @@ class Scenario:
                           jerfile="data/jer/Spring16_25nsV6_MC",
                           pufile="TreeMaker/Production/test/data/PileupHistograms_0721_63mb_pm5.root",
                           era="Run2_25ns")
+        elif sname == "Summer16Fastsig":
+            self.set_vars(globaltag="80X_mcRun2_asymptotic_2016_miniAODv2",
+                          tagname="PAT",
+                          geninfo=True,
+                          signal=True,
+                          fastsim=True,
+                          jecfile="data/jec/Spring16_25nsFastSimMC_V1",
+                          jerfile="data/jer/Spring16_25nsV6_MC",
+                          pufile="TreeMaker/Production/test/data/PileupHistograms_0721_63mb_pm5.root",
+                          era="Run2_25ns")
         elif sname == "2016H":
             self.set_vars(globaltag="80X_dataRun2_Prompt_v14",
                           tagname="RECO",
