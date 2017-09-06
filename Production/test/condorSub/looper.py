@@ -122,7 +122,7 @@ def generateSubmission(options,verbose,filesConfig,scenario,firstJob,filesSet,ru
                      +"-e 's|NSTART|"+str(nstart)+"|g' "
                      +"-e 's|NFILES|"+str(options.nFiles)+"|g' "
                      +"-e 's|SCENARIO|"+scenario+"|g' "
-                     +"-e 's|THREADS|"+options.threads+"|g' "
+                     +"-e 's|THREADS|"+str(options.threads)+"|g' "
                      +"-e 's~EXTRASTUFF~"+extras+"~g' "
                      +"< jobExecCondor.jdl > jobExecCondor_"+jobname+".jdl")
         
